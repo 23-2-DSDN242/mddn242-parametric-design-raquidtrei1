@@ -33,7 +33,7 @@ const letterC = {
 const backgroundColor  = "#caf0f8";
 const strokeColor      = "#03045e";
 
-const darkBlue  = "#0077b6";
+const darkBlue  = "#caf0f8";
 const lightBlue  = "#caf0f8";
 
 function setup () {
@@ -43,7 +43,7 @@ function setup () {
 
   // color/stroke setup
   stroke(strokeColor);
-  strokeWeight(0);
+  strokeWeight(4);
 
   // with no animation, redrawing the screen is not necessary
   noLoop();
