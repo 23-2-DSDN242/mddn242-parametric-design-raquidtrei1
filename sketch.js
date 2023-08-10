@@ -13,28 +13,28 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "size": 80,
-  "offsetx": 0,
-  "offsety": 35
+  "size": 70,
+  "offsetx": 75,
+  "offsety": 125
 }
 
 const letterB = {
-  "size": 150,
-  "offsetx": 0,
-  "offsety": -145
+  "size": 50,
+  "offsetx": 150,
+  "offsety": 75
 }
 
 const letterC = {
   "size": 100,
-  "offsetx": 30,
-  "offsety": 0
+  "offsetx": 120,
+  "offsety": 75
 }
 
 const backgroundColor  = "#caf0f8";
 const strokeColor      = "#03045e";
 
 const darkBlue  = "#0077b6";
-const lightBlue  = "#90e0ef";
+const lightBlue  = "#caf0f8";
 
 function setup () {
   // create the drawing canvas, save the canvas element
@@ -43,7 +43,7 @@ function setup () {
 
   // color/stroke setup
   stroke(strokeColor);
-  strokeWeight(4);
+  strokeWeight(0);
 
   // with no animation, redrawing the screen is not necessary
   noLoop();
@@ -58,9 +58,9 @@ function draw () {
   let center_y = canvasHeight / 2;
 
   // draw the letters A, B, C from saved data
-  drawLetter(center_x - 250, center_y, letterA);
-  drawLetter(center_x      , center_y, letterB);
-  drawLetter(center_x + 250, center_y, letterC);
+  drawLetter(center_x - 250-75, center_y-75, letterA);
+  drawLetter(center_x -75     , center_y-75, letterB);
+  drawLetter(center_x + 250-75, center_y-75, letterC);
 }
 
 function drawLetter(posx, posy, letterData) {
@@ -71,7 +71,7 @@ function drawLetter(posx, posy, letterData) {
 
   // draw two circles
   fill(darkBlue);
-  ellipse(posx, posy, 150, 150);
+  rect(posx, posy, 150, 150,15);
   fill(lightBlue);
   ellipse(pos2x, pos2y, size2, size2);
 }
