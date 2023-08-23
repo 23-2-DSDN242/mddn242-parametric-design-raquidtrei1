@@ -5,9 +5,22 @@ const alphabet = {
     "offsety": 0
   },
   "A": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 3.14*1.75,
+    "arcEnd": 3.14*0.75,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "B": {
     "size": 75,

@@ -17,24 +17,21 @@ const strokeColor  = "#03045e";
  */
 function drawLetter(letterData) {
   // color/stroke setup
-  stroke(strokeColor);
-  strokeWeight(4);
+  const circleCol  = color(239, 118, 122, 200);
 
   // determine parameters for second circle
-  let size2 = letterData["size"];
-  let pos2x = 50  + letterData["offsetx"];
-  let pos2y = 150 + letterData["offsety"];
+  let arcStart = letterData["arcStart"];
+  let arcEnd = letterData["arcEnd"];
 
   // draw two circles
-  fill(darkBlue);
-  ellipse(50, 150, 75, 75);
-  fill(lightBlue);
-  ellipse(pos2x, pos2y, size2, size2);
+  fill(circleCol);
+  strokeWeight(0)
+  arc(70, 100, 140, 140, arcStart, arcEnd);
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
+  new_letter["arcStart"]    = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
   new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
   new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
   return new_letter;

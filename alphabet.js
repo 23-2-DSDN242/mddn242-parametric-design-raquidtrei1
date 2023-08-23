@@ -51,11 +51,11 @@ function draw () {
   scale(0.5);
 
   // constants
-  const left_margin = 40;
+  const left_margin = 0;
   const right_margin = 2*width - 40;
-  const top_margin = 80;
+  const top_margin = 40;
   const bottom_margin = 2*height - 60;
-  const x_step = 140;
+  const x_step = 150;
   const y_step = 280;
   const first_letter_offset_x = 20;
 
@@ -80,7 +80,7 @@ function draw () {
           noFill()
           strokeWeight(4);
           stroke(systemBoxColor);
-          rect(0, 0, 100, 200);
+          rect(0, 0, 140, 200);
         }
 
         let letter = letters[cur_letter_index];
