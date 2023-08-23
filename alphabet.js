@@ -51,12 +51,12 @@ function draw () {
   scale(0.5);
 
   // constants
-  const left_margin = 0;
+  const left_margin = 40;
   const right_margin = 2*width - 40;
   const top_margin = 40;
   const bottom_margin = 2*height - 60;
-  const x_step = 150;
-  const y_step = 280;
+  const x_step = 182;
+  const y_step = 220;
   const first_letter_offset_x = 20;
 
   let cur_letter_index = 0;
@@ -69,9 +69,9 @@ function draw () {
     stroke(systemLineColor);
     line(left_margin, 0, right_margin, 0);
     for (let i=left_margin; i<right_margin-8; i+=30) {
-      line(i, 100, i+12, 100);
+      line(i, 75, i+12, 75);
     }
-    line(left_margin, 200, right_margin, 200);
+    line(left_margin, 150, right_margin, 150);
 
     translate(left_margin+first_letter_offset_x, 0);
     for (let i=left_margin+first_letter_offset_x; i<right_margin-x_step+1; i+=x_step) {
@@ -80,7 +80,7 @@ function draw () {
           noFill()
           strokeWeight(4);
           stroke(systemBoxColor);
-          rect(0, 0, 140, 200);
+          rect(0, 0, 150, 150);
         }
 
         let letter = letters[cur_letter_index];

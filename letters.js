@@ -1,12 +1,7 @@
 const alphabet = {
   "default": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 0
-  },
-  "A": {
-    "arcStart": 3.14*1.75,
-    "arcEnd": 3.14*0.75,
+    "arcStart": 0,
+    "arcEnd": 2,
   
     "rect1_x": 120,
     "rect1_y": 22,
@@ -22,180 +17,653 @@ const alphabet = {
     "circle_y": 1,
     "circle_r": 1,
   },
+  "A": {
+    "arcStart": -0.785,
+    "arcEnd": 3.14*0.75,
+  
+    "rect1_x": 117,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 75,
+    "rect2_y": 75,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 75,
+    "circle_y": 75,
+    "circle_r": 0,
+  },
   "B": {
-    "size": 75,
-    "offsetx": 0,
-    "offsety": -70
+    "arcStart": 0,
+    "arcEnd": 0,
+  
+    "rect1_x": 0,
+    "rect1_y": 0,
+    "rect1_w": 33,
+    "rect1_h": 150,
+  
+    "rect2_x": 75,
+    "rect2_y": 75,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 75,
+    "circle_y": 100,
+    "circle_r": 100,
   },
   "C": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 3.14/2,
+    "arcEnd": 3.14*1.5,
+  
+    "rect1_x": 75,
+    "rect1_y": 75,
+    "rect1_w": 0,
+    "rect1_h": 0,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 75,
+    "circle_y": 75,
+    "circle_r": 0,
   },
   "D": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "E": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "F": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "G": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "H": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "I": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "J": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "K": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "L": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "M": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "N": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "O": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "P": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "Q": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "R": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "S": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "T": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "U": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "V": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "W": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "X": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "Y": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "Z": {
-    "size": 50,
-    "offsetx": 15,
-    "offsety": 0
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "0": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "1": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "2": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "3": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "4": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "5": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "6": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "7": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "8": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   },
   "9": {
-    "size": 40,
-    "offsetx": 0,
-    "offsety": 17
+    "arcStart": 0,
+    "arcEnd": 2,
+  
+    "rect1_x": 120,
+    "rect1_y": 22,
+    "rect1_w": 33,
+    "rect1_h": 128,
+  
+    "rect2_x": 0,
+    "rect2_y": 0,
+    "rect2_w": 0,
+    "rect2_h": 0,
+  
+    "circle_x": 1,
+    "circle_y": 1,
+    "circle_r": 1,
   }
 
 }
