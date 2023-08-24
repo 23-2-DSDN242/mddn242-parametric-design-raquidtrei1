@@ -108,7 +108,7 @@ function draw () {
   const right_margin = 2*width - 40;
   const top_margin = 80;
   const bottom_margin = 2*height - 60;
-  const numSteps = 11;
+  const numSteps = 12;
   const x_step = (right_margin - left_margin + 100) / (numSteps + 1)
   const first_letter_offset_x = 20;
 
@@ -118,9 +118,9 @@ function draw () {
   stroke(systemLineColor);
   line(left_margin, 0, right_margin, 0);
   for(let i=left_margin; i<right_margin-8; i+=30) {
-    line(i, 100, i+12, 100);
+    line(i, 75, i+12, 75);
   }
-  line(left_margin, 200, right_margin, 200);
+  line(left_margin, 150, right_margin, 150);
 
   translate(left_margin+first_letter_offset_x, 0);
   for(let i=0; i<numSteps; i = i+1) {
@@ -131,7 +131,7 @@ function draw () {
       noFill()
       strokeWeight(4);
       stroke(systemBoxColor);
-      rect(0, 0, 100, 200);
+      rect(0, 0, 150, 150);
     }
 
     if (interpolation_is_on || (i==0 || i==numSteps-1)) {

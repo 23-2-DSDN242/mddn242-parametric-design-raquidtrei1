@@ -1,12 +1,7 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#caf0f8";
+var systemBackgroundColor = "#E5F9E0";
 var systemLineColor = "#000090";
 var systemBoxColor = "#00c800";
-
-/* internal constants */
-const darkBlue  = "#0077b6";
-const lightBlue  = "#90e0ef";
-const strokeColor  = "#03045e";
 
 /*
  * Draw the letter given the letterData
@@ -14,40 +9,52 @@ const strokeColor  = "#03045e";
  * Letters should always be drawn with the
  * following bounding box guideline:
  * from (0,0) to (100, 200)
- */
+ */  
 function drawLetter(letterData) {
   // color/stroke setup
-  const circleCol  = color(239, 118, 122, 200);
-  const rect1Col  = color(69, 105, 144, 200);
+  const arcCol  = color(163, 247, 181, 200);
+  const rectCol  = color(64, 201, 162, 200);
+  const circCol  = color(47, 156, 149, 200);
 
   // all paramenters for create letters
+  let arcX = letterData["arcX"];
   let arcStart = letterData["arcStart"];
   let arcEnd = letterData["arcEnd"];
 
-  let rect1_x = letterData["rect1_x"]
-  let rect1_y = letterData["rect1_y"]
-  let rect1_w = letterData["rect1_w"]
-  let rect1_h = letterData["rect1_h"]
+  let rect1_x = letterData["rect1_x"];
+  let rect1_y = letterData["rect1_y"];
+  let rect1_w = letterData["rect1_w"];
+  let rect1_h = letterData["rect1_h"];
 
-  let circle_x = letterData["circle_x"]
-  let circle_y = letterData["circle_y"]
-  let circle_r = letterData["circle_r"]
+  let rect2_x = letterData["rect2_x"];
+  let rect2_y = letterData["rect2_y"];
+  let rect2_w = letterData["rect2_w"];
+  let rect2_h = letterData["rect2_h"];
+
+  let circle_x = letterData["circle_x"];
+  let circle_y = letterData["circle_y"];
+  let circle_r = letterData["circle_r"];
 
   // creates arc
-  fill(circleCol);
-  strokeWeight(0)
-  arc(75, 75, 150, 150, arcStart, arcEnd);
+  fill(arcCol);
+  strokeWeight(0);
+  arc(arcX, 75, 150, 150, arcStart, arcEnd);
   
   // creates first rectangle
-  fill(rect1Col)
-  rect(rect1_x, rect1_y, rect1_w, rect1_h)
+  fill(rectCol);
+  rect(rect1_x, rect1_y, rect1_w, rect1_h);
+
+  fill(rectCol);
+  rect(rect2_x, rect2_y, rect2_w, rect2_h);
 
   // creates circle
-  circle(circle_x, circle_y, circle_r)
+  fill(circCol);
+  circle(circle_x, circle_y, circle_r);
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
+  new_letter["arcX"]    = map(percent, 0, 100, oldObj["arcX"], newObj["arcX"]);
   new_letter["arcStart"]    = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
   new_letter["arcEnd"] = map(percent, 0, 100, oldObj["arcEnd"], newObj["arcEnd"]);
 
@@ -55,6 +62,11 @@ function interpolate_letter(percent, oldObj, newObj) {
   new_letter["rect1_y"] = map(percent, 0, 100, oldObj["rect1_y"], newObj["rect1_y"]);
   new_letter["rect1_w"] = map(percent, 0, 100, oldObj["rect1_w"], newObj["rect1_w"]);
   new_letter["rect1_h"] = map(percent, 0, 100, oldObj["rect1_h"], newObj["rect1_h"]);
+
+  new_letter["rect2_x"] = map(percent, 0, 100, oldObj["rect2_x"], newObj["rect2_x"]);
+  new_letter["rect2_y"] = map(percent, 0, 100, oldObj["rect2_y"], newObj["rect2_y"]);
+  new_letter["rect2_w"] = map(percent, 0, 100, oldObj["rect2_w"], newObj["rect2_w"]);
+  new_letter["rect2_h"] = map(percent, 0, 100, oldObj["rect2_h"], newObj["rect2_h"]);
 
   new_letter["circle_x"] = map(percent, 0, 100, oldObj["circle_x"], newObj["circle_x"]);
   new_letter["circle_y"] = map(percent, 0, 100, oldObj["circle_y"], newObj["circle_y"]);
