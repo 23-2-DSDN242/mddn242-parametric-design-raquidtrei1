@@ -1,5 +1,5 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#E5F9E0";
+var systemBackgroundColor = "#231942";
 var systemLineColor = "#000090";
 var systemBoxColor = "#00c800";
 
@@ -12,14 +12,18 @@ var systemBoxColor = "#00c800";
  */  
 function drawLetter(letterData) {
   // color/stroke setup
-  const arcCol  = color(163, 247, 181, 200);
-  const rectCol  = color(64, 201, 162, 200);
-  const circCol  = color(47, 156, 149, 200);
+  const arcCol  = color(190, 149, 196, 200); 
+  const rectCol  = color(159, 134, 192, 200);
+  const circCol  = color(94, 84, 142, 200);
 
-  // all paramenters for create letters
+  // all paramenters for create letters (explained in README.md)
   let arcX = letterData["arcX"];
   let arcStart = letterData["arcStart"];
   let arcEnd = letterData["arcEnd"];
+
+  let arc2X = letterData["arc2X"];
+  let arc2Start = letterData["arc2Start"];
+  let arc2End = letterData["arc2End"];
 
   let rect1_x = letterData["rect1_x"];
   let rect1_y = letterData["rect1_y"];
@@ -39,6 +43,7 @@ function drawLetter(letterData) {
   fill(arcCol);
   strokeWeight(0);
   arc(arcX, 75, 150, 150, arcStart, arcEnd);
+  arc(arc2X, 75, 150, 150, arc2Start, arc2End);
   
   // creates first rectangle
   fill(rectCol);
@@ -57,6 +62,10 @@ function interpolate_letter(percent, oldObj, newObj) {
   new_letter["arcX"]    = map(percent, 0, 100, oldObj["arcX"], newObj["arcX"]);
   new_letter["arcStart"]    = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
   new_letter["arcEnd"] = map(percent, 0, 100, oldObj["arcEnd"], newObj["arcEnd"]);
+
+  new_letter["arc2X"]    = map(percent, 0, 100, oldObj["arc2X"], newObj["arc2X"]);
+  new_letter["arc2Start"]    = map(percent, 0, 100, oldObj["arc2Start"], newObj["arc2Start"]);
+  new_letter["arc2End"] = map(percent, 0, 100, oldObj["arc2End"], newObj["arc2End"]);
 
   new_letter["rect1_x"] = map(percent, 0, 100, oldObj["rect1_x"], newObj["rect1_x"]);
   new_letter["rect1_y"] = map(percent, 0, 100, oldObj["rect1_y"], newObj["rect1_y"]);

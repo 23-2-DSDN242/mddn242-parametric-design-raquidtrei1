@@ -3,6 +3,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+    
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75,
     "rect1_y": 75,
@@ -23,6 +27,10 @@ const alphabet = {
     "arcStart": -0.785,
     "arcEnd": 3.14*0.75,
   
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
+  
     "rect1_x": 105,
     "rect1_y": 22,
     "rect1_w": 33,
@@ -41,6 +49,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 15,
     "rect1_y": 0,
@@ -60,6 +72,10 @@ const alphabet = {
     "arcX": 90,
     "arcStart": 3.14*.33,
     "arcEnd": 3.14*1.66,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75,
     "rect1_y": 75,
@@ -79,6 +95,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 150-33-15,
     "rect1_y": 0,
@@ -98,6 +118,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 0,
     "rect1_y": 0,
@@ -117,6 +141,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 0,
     "rect1_y": 0,
@@ -136,6 +164,10 @@ const alphabet = {
     "arcX": 85,
     "arcStart": 3.14*.5,
     "arcEnd": 3.14*1.66,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 107,
     "rect1_y": 100,
@@ -156,6 +188,10 @@ const alphabet = {
     "arcStart": 0,
     "arcEnd": 0,
   
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
+
     "rect1_x": 0,
     "rect1_y": 0,
     "rect1_w": 45,
@@ -174,6 +210,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75-(33/2),
     "rect1_y": 75,
@@ -193,6 +233,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 3.14,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 105,
     "rect1_y": 0,
@@ -212,6 +256,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 11,
     "rect1_y": 0,
@@ -231,6 +279,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 13,
     "rect1_y": 117,
@@ -248,8 +300,12 @@ const alphabet = {
   },
   "M": {
     "arcX": 75,
-    "arcStart": -1.14,
-    "arcEnd": 4.3,
+    "arcStart": 4.3, 
+    "arcEnd": -1.14,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 0,
     "rect1_y": 0,
@@ -269,6 +325,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 1.14,
     "arcEnd": 4.3,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 0,
     "rect1_y": 0,
@@ -288,6 +348,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 6.28,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75,
     "rect1_y": 75,
@@ -301,12 +365,16 @@ const alphabet = {
   
     "circle_x": 75,
     "circle_y": 75,
-    "circle_r": 0,
+    "circle_r": 50,
   },
   "P": {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 15,
     "rect1_y": 0,
@@ -326,6 +394,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 6.28,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75,
     "rect1_y": 75,
@@ -345,6 +417,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 3.14*1.5,
     "arcEnd": 6.28,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 11,
     "rect1_y": 0,
@@ -364,6 +440,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 3.14,
     "arcEnd": 3.14*1.5,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 3.14*0.5,
   
     "rect1_x": 75,
     "rect1_y": 75,
@@ -377,12 +457,16 @@ const alphabet = {
   
     "circle_x": 75*1.5,
     "circle_y": 75*1.5,
-    "circle_r": 75,
+    "circle_r": 0,
   },
   "T": {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 13,
     "rect1_y": 0,
@@ -402,6 +486,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 3.14,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 0,
     "rect1_y": 0,
@@ -421,6 +509,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": -0.9,
     "arcEnd": 4,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75,
     "rect1_y": 75,
@@ -438,8 +530,12 @@ const alphabet = {
   },
   "W": {
     "arcX": 75,
-    "arcStart": 2,
-    "arcEnd": 7.42,
+    "arcStart": 3.14*0.33,
+    "arcEnd": 3.14*0.66,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 0,
     "rect1_y": 0,
@@ -459,11 +555,15 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0.6,
     "arcEnd": 2.54,
+
+    "arc2X": 75,
+    "arc2Start": 3.14*1.175,
+    "arc2End": 3.14*1.825,
   
-    "rect1_x": 75/2,
-    "rect1_y": 0,
-    "rect1_w": 75,
-    "rect1_h": 45,
+    "rect1_x": 75,
+    "rect1_y": 75,
+    "rect1_w": 0,
+    "rect1_h": 0,
   
     "rect2_x": 75,
     "rect2_y": 75,
@@ -478,6 +578,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 3.14*1.2,
     "arcEnd": 3.14*1.8,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75-(33/2),
     "rect1_y": 75,
@@ -497,6 +601,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": -0.4,
     "arcEnd": 2.74,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 0,
     "rect1_y": 0,
@@ -516,11 +624,15 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 6.28,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
-    "rect1_x": 75,
-    "rect1_y": 75,
-    "rect1_w": 0,
-    "rect1_h": 0,
+    "rect1_x": 75-(33/2),
+    "rect1_y": 0,
+    "rect1_w": 33,
+    "rect1_h": 150,
   
     "rect2_x": 75,
     "rect2_y": 75,
@@ -529,12 +641,16 @@ const alphabet = {
   
     "circle_x": 75,
     "circle_y": 75,
-    "circle_r": 50,
+    "circle_r": 0,
   },
   "1": {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 70,
     "rect1_y": 0,
@@ -554,6 +670,10 @@ const alphabet = {
     "arcX": 65,
     "arcStart": -3.14*.75,
     "arcEnd": 3.14*.25,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 13.5,
     "rect1_y": 150-33,
@@ -573,6 +693,10 @@ const alphabet = {
     "arcX": 57,
     "arcStart": -3.14*.66,
     "arcEnd": 3.14*.66,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75,
     "rect1_y": 75,
@@ -592,6 +716,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 70,
     "rect1_y": 0,
@@ -611,6 +739,10 @@ const alphabet = {
     "arcX": 66,
     "arcStart": 0,
     "arcEnd": 3.14/2,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 13.5,
     "rect1_y": 0,
@@ -630,6 +762,10 @@ const alphabet = {
     "arcX": 95,
     "arcStart": 3.14*0.66,
     "arcEnd": 3.14*1.66,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75,
     "rect1_y": 75,
@@ -649,6 +785,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": -3.14*0.33,
     "arcEnd": 3.14*0.66,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 13.5,
     "rect1_y": 0,
@@ -666,8 +806,12 @@ const alphabet = {
   },
   "8": {
     "arcX": 75,
-    "arcStart": 0,
-    "arcEnd": 3.14,
+    "arcStart": 3.14*0.25,
+    "arcEnd": 3.14*0.75,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 75,
     "rect1_y": 75,
@@ -687,6 +831,10 @@ const alphabet = {
     "arcX": 75,
     "arcStart": 0,
     "arcEnd": 0,
+
+    "arc2X": 75,
+    "arc2Start": 0,
+    "arc2End": 0,
   
     "rect1_x": 150-33-15,
     "rect1_y": 0,
