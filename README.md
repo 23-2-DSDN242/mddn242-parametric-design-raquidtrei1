@@ -2,9 +2,9 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11538561&assignment_repo_type=AssignmentRepo)
 ## MDDN 242 2023 Assignment 2
 
-This is a simple code-driving font using only geometric shapes.
+This is a simple code-driving font using only geometric shapes. I chose this typeface because I believed (with my proficiency in coding) that this approach can result in: a nice looking font, a font that is readable and code that uses less than 20 parameters.
 
-Each of my letters is created with 5 shapes. Two arcs, two quadrilaterals, and a single circle. Not all shapes are needed to create a single letter however, some are simple enough to require two out of the five provided.
+Each of my letters is created with 5 shapes. Two arcs, two quadrilaterals, and a single circle. Not all shapes are needed to create a single letter however, some are simple enough to require two out of the five provided. As much as I wanted to use triangles, using more than one triangle quickly increased the parameter count towards the maximum
 
 The 17 parameters per letter :
   * `arcX` : x location of first arc
