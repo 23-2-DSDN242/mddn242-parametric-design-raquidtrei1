@@ -116,31 +116,31 @@ const alphabet = {
   },
   "E": {
     "arcX": 75,
-    "arcStart": 0,
-    "arcEnd": 0,
+    "arcStart": 3.14*0.86,
+    "arcEnd": 3.14*1.14,
 
     "arc2X": 75,
     "arc2Start": 0,
     "arc2End": 0,
-  
+
     "rect1_x": 0,
     "rect1_y": 0,
     "rect1_w": 150,
     "rect1_h": 45,
-  
+
     "rect2_x": 0,
     "rect2_y": 150-45,
     "rect2_w": 150,
     "rect2_h": 45,
-  
-    "circle_x": 40,
+
+    "circle_x": 75,
     "circle_y": 75,
-    "circle_r": 45,
+    "circle_r": 0,
   },
   "F": {
     "arcX": 75,
-    "arcStart": 0,
-    "arcEnd": 0,
+    "arcStart": 3.14*0.86,
+    "arcEnd": 3.14*1.14,
 
     "arc2X": 75,
     "arc2Start": 0,
@@ -156,9 +156,9 @@ const alphabet = {
     "rect2_w": 33,
     "rect2_h": 150,
   
-    "circle_x": 65,
+    "circle_x": 75,
     "circle_y": 75,
-    "circle_r": 45,
+    "circle_r": 0,
   },
   "G": {
     "arcX": 85,
@@ -300,8 +300,8 @@ const alphabet = {
   },
   "M": {
     "arcX": 75,
-    "arcStart": 4.3, 
-    "arcEnd": -1.14,
+    "arcStart": 3.14*1.36, 
+    "arcEnd": 3.14*1.64,
 
     "arc2X": 75,
     "arc2Start": 0,
