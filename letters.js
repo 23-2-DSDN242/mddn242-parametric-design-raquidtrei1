@@ -323,12 +323,12 @@ const alphabet = {
   },
   "N": {
     "arcX": 75,
-    "arcStart": 1.14,
+    "arcStart": 3.14*1.24,
     "arcEnd": 4.3,
 
     "arc2X": 75,
-    "arc2Start": 0,
-    "arc2End": 0,
+    "arc2Start": 3.14*0.24,
+    "arc2End": 3.14*0.36,
   
     "rect1_x": 0,
     "rect1_y": 0,
@@ -599,12 +599,12 @@ const alphabet = {
   },
   "Z": {
     "arcX": 75,
-    "arcStart": -0.4,
-    "arcEnd": 2.74,
+    "arcStart": 3.14*1.76,
+    "arcEnd": 3.14*1.87,
 
     "arc2X": 75,
-    "arc2Start": 0,
-    "arc2End": 0,
+    "arc2Start": 3.14*0.76,
+    "arc2End": 2.74,
   
     "rect1_x": 0,
     "rect1_y": 0,
