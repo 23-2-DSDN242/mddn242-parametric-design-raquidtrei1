@@ -5,9 +5,31 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  ["size",       0, 100],
-  ["offsetx",  -30,  30],
-  ["offsety", -100, 100]
+  // params for arc 1
+  ["arcX",       0, 100],
+  ["arcStart",  0,  360],
+  ["arcEnd", 0,  360],
+  
+  // params for arc 2
+  ["arc2X",       0, 100],
+  ["arc2Start",  0,  360],
+  ["arc2End", 0,  360],
+
+  // params for rects
+  ["rect1_x", 0, 150],
+  ["rect1_y", 0, 150],
+  ["rect1_w", 0, 150],
+  ["rect1_h", 0, 150],
+
+  ["rect2_x", 0, 150],
+  ["rect2_y", 0, 150],
+  ["rect2_w", 0, 150],
+  ["rect2_h", 0, 150],
+
+  ["circle_x", 0,  75],
+  ["circle_y", 0,  75],
+  ["circle_r", 0,  33],
+
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
@@ -81,13 +103,13 @@ function draw () {
   // draw the letters A, B, C from saved data
   push();
   scale(2);
-  translate(width/4 - 50, 25);
+  translate(width/4 - 50, 50);
 
   if (debugBox) {
     noFill()
     strokeWeight(4);
     stroke(0, 200, 0);
-    rect(0, 0, 100, 200);
+    rect(-25, 0, 150, 150);
   }
 
   let obj = sliderToDataObject();
