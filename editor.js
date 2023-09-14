@@ -26,6 +26,7 @@ const sliderInfo = [
   ["rect2_w", 0, 150],
   ["rect2_h", 0, 150],
 
+  // params for circle
   ["circle_x", 0,  75],
   ["circle_y", 0,  75],
   ["circle_r", 0,  33],

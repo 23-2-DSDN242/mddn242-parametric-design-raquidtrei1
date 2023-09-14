@@ -39,7 +39,7 @@ function drawLetter(letterData) {
   let circle_y = letterData["circle_y"];
   let circle_r = letterData["circle_r"];
 
-  // creates arc
+  // creates arcs
   fill(arcCol);
   strokeWeight(0);
   arc(arcX, 75, 150, 150, arcStart, arcEnd);
@@ -49,6 +49,7 @@ function drawLetter(letterData) {
   fill(rectCol);
   rect(rect1_x, rect1_y, rect1_w, rect1_h);
 
+  // creates second rectangle
   fill(rectCol);
   rect(rect2_x, rect2_y, rect2_w, rect2_h);
 

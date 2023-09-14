@@ -107,27 +107,31 @@ function drawLetter(posx, posy, letterData) {
   const circleCol  = color(239, 118, 122, 200);
   const rect1Col  = color(69, 105, 144, 200);
 
-  // determine parameters for second circle
+  // determine parameters for arc
   let arcStart = letterData["arcStart"];
   let arcEnd = letterData["arcEnd"];
 
+  // determine parameters for rectangles
   let rect1_x = posx + letterData["rect1_x"]
   let rect1_y = posy + letterData["rect1_y"]
   let rect1_w = letterData["rect1_w"]
   let rect1_h = letterData["rect1_h"]
 
+  // determine parameters for circle
   let circle_x = posx + letterData["circle_x"]
   let circle_y = posy + letterData["circle_y"]
   let circle_r = letterData["circle_r"]
 
-  // draw two circles
+  // draw arc
   fill(circleCol);
   strokeWeight(0)
   arc(posx, posy, 150, 150, arcStart, arcEnd);
   
+  // draw rectangle
   fill(rect1Col)
   rect(rect1_x-75, rect1_y-75, rect1_w, rect1_h)
 
+  // draw circle
   circle(circle_x, circle_y, circle_r)
 }
 
